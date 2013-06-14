@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='UTF-8'>
+  <title>CoffeeScript API Documentation</title>
+  <link rel='stylesheet' href='../assets/codo.css' type='text/css'>
+  <script src='../assets/codo.js'></script>
+  <script src='../assets/search_data.js'></script>
+</head>
+  <body>
+    <div id='base' data-path='../'></div>
+<div id='header'>
+  <div id='menu'>
+    <a href='../class_index.html' title='Index'>Index</a>
+    &raquo;
+    <span class='title'>ImageProcessor</span>
+    <nav>
+      <ul>
+        <li class='noframes'>
+          (<a class='noframes' href='#'>no frames</a>)
+        </li>
+      </ul>
+    </nav>
+    <div id='search'>
+      <a id='class_list_link' href='../class_list.html'>Classes</a>
+      <a id='method_list_link' href='../method_list.html'>Methods</a>
+      <a id='extra_list_link' href='../extra_list.html'>Extras</a>
+    </div>
+  </div>
+  <iframe id='search_frame'></iframe>
+  <div id='fuzzySearch'>
+    <input type='text'>
+    <ol></ol>
+  </div>
+  <div id='help'>
+    <p>
+      Quickly fuzzy find classes, mixins, methods, file:
+    </p>
+    <ul>
+      <li>
+        <span>Ctrl-T</span>
+        Open fuzzy finder dialog
+      </li>
+    </ul>
+    <p>
+      In frame mode you can toggle the list naviation frame on the left side:
+    </p>
+    <ul>
+      <li>
+        <span>Ctrl-L</span>
+        Toggle list view
+      </li>
+    </ul>
+    <p>
+      You can focus a list in frame mode or toggle a tab in frameless mode:
+    </p>
+    <ul>
+      <li>
+        <span>Ctrl-C</span>
+        Class list
+      </li>
+      <li>
+        <span>Ctrl-I</span>
+        Mixin list
+      </li>
+      <li>
+        <span>Ctrl-F</span>
+        File list
+      </li>
+      <li>
+        <span>Ctrl-M</span>
+        Method list
+      </li>
+      <li>
+        <span>Ctrl-E</span>
+        Extras list
+      </li>
+    </ul>
+    <p>
+      You can focus and blur the search input:
+    </p>
+    <ul>
+      <li>
+        <span>Ctrl-S</span>
+        Focus search input
+      </li>
+      <li>
+        <span>Esc</span>
+        Blur search input
+      </li>
+    </ul>
+    <p>
+      In frameless mode you can close the list tab:
+    </p>
+    <ul>
+      <li>
+        <span>Esc</span>
+        Close list tab
+      </li>
+    </ul>
+  </div>
+</div>
+    <div id='content'>
+      <h1>
+        Class:
+        ImageProcessor
+      </h1>
+      <table class='box'>
+        <tr>
+          <td>Defined in:</td>
+          <td>models&#47;image-processor.coffee</td>
+        </tr>
+        <tr>
+          <td>Inherits:</td>
+          <td>
+            <a href='../classes/Backbone/Model.html'>Backbone.Model</a>
+          </td>
+        </tr>
+      </table>
+      <h2>Overview</h2>
+      <div class='docstring'>
+  <p>Base class to work with the data (without renderings)</p>
+</div>
+<div class='tags'>
+</div>
+      <h2>Instance Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#constructor-instance'>
+        - (void) <strong>constructor</strong>()
+      </a>
+    </span>
+    <span class='constructor note title'>Constructor</span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#parseData-instance'>
+        - (void) <strong>parseData</strong>(data)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getR-instance'>
+        - (void) <strong>getR</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getR2-instance'>
+        - (void) <strong>getR2</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#loadImage-instance'>
+        - (void) <strong>loadImage</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showBoundingBox-instance'>
+        - (void) <strong>showBoundingBox</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      Function to show the boundingBox this.boundingBox Raphael element (rect) the boundingBox
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#scaleBodyContour-instance'>
+        - (void) <strong>scaleBodyContour</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      Function for scaling Body Contour
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#pointsToPath-instance'>
+        - (void) <strong>pointsToPath</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#drawInitialBodyContour-instance'>
+        - (void) <strong>drawInitialBodyContour</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getLines-instance'>
+        - (void) <strong>getLines</strong>(index)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#scaleSkeleton-instance'>
+        - (void) <strong>scaleSkeleton</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#drawSkeleton-instance'>
+        - (void) <strong>drawSkeleton</strong>(results)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#clone-instance'>
+        - (void) <strong>clone</strong>(activeBodyContour)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#goDrawSkeleton-instance'>
+        - (void) <strong>goDrawSkeleton</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#PathToPoints-instance'>
+        - (void) <strong>PathToPoints</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#toFront-instance'>
+        - (void) <strong>toFront</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#highlightCriticalPoints-instance'>
+        - (void) <strong>highlightCriticalPoints</strong>(zoomed)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getDirection-instance'>
+        - (void) <strong>getDirection</strong>(point1, point2)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#handle-instance'>
+        - (void) <strong>handle</strong>(i, radius, activeBodyContour, direction)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateNewCoordinates-instance'>
+        - (void) <strong>calculateNewCoordinates</strong>(idx, p1, p2)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateNewCoordinates1-instance'>
+        - (void) <strong>calculateNewCoordinates1</strong>(idx, p1, p2)
+      </a>
+    </span>
+    <span class='desc'>
+      function for calculating coordinates type1
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateNewCoordinates2-instance'>
+        - (void) <strong>calculateNewCoordinates2</strong>(idx, p1, p2, p3)
+      </a>
+    </span>
+    <span class='desc'>
+      function for calculating coordinates type2
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateNewCoordinates3-instance'>
+        - (void) <strong>calculateNewCoordinates3</strong>(p1, p2, p3, control_point)
+      </a>
+    </span>
+    <span class='desc'>
+      function for calculating coordinates type3
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getX-instance'>
+        - (number) <strong>getX</strong>(element)
+      </a>
+    </span>
+    <span class='desc'>
+      function for getting x coordinate from a Raphael element/object(x,y)
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getY-instance'>
+        - (number) <strong>getY</strong>(element)
+      </a>
+    </span>
+    <span class='desc'>
+      function for getting y coordinate from a Raphael element/object(x,y)
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getRelatedJointsIndexes-instance'>
+        - (array) <strong>getRelatedJointsIndexes</strong>(index)
+      </a>
+    </span>
+    <span class='desc'>
+      get related joints
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#moveContours-instance'>
+        - (void) <strong>moveContours</strong>(index, dragged_joint, dragged_to)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#drawLine-instance'>
+        - (void) <strong>drawLine</strong>(results, index1, index2)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#goDrawPoints-instance'>
+        - (void) <strong>goDrawPoints</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#hideSkeleton-instance'>
+        - (void) <strong>hideSkeleton</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#zoomEditLoad-instance'>
+        - (void) <strong>zoomEditLoad</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#lock-instance'>
+        - (void) <strong>lock</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      function for locking the main paper
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateBodyBoundingBox-instance'>
+        - (void) <strong>calculateBodyBoundingBox</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#drawZoomedContour-instance'>
+        - (void) <strong>drawZoomedContour</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#saveContour-instance'>
+        - (void) <strong>saveContour</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      <hr>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#zoomNext-instance'>
+        - (void) <strong>zoomNext</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      <hr>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showShoulders-instance'>
+        - (void) <strong>showShoulders</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showHead-instance'>
+        - (void) <strong>showHead</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showArm-instance'>
+        - (void) <strong>showArm</strong>(arm)
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showArmTipToHip-instance'>
+        - (void) <strong>showArmTipToHip</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showLegs-instance'>
+        - (void) <strong>showLegs</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fromZoom-instance'>
+        - (void) <strong>fromZoom</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#goDrawPointsNoZoom-instance'>
+        - (void) <strong>goDrawPointsNoZoom</strong>()
+      </a>
+    </span>
+    <span class='desc'>
+      
+    </span>
+  </li>
+</ul>
+      <h2>Constructor Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='constructor-instance'>
+      - (void) <strong>constructor</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+</div>
+      <h2>Instance Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='parseData-instance'>
+      - (void) <strong>parseData</strong>(data)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getR-instance'>
+      - (void) <strong>getR</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getR2-instance'>
+      - (void) <strong>getR2</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='loadImage-instance'>
+      - (void) <strong>loadImage</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showBoundingBox-instance'>
+      - (void) <strong>showBoundingBox</strong>()
+    </p>
+    <div class='docstring'>
+  <p>Function to show the boundingBox
+this.boundingBox Raphael element (rect) the boundingBox</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='scaleBodyContour-instance'>
+      - (void) <strong>scaleBodyContour</strong>()
+    </p>
+    <div class='docstring'>
+  <p>Function for scaling Body Contour</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='pointsToPath-instance'>
+      - (void) <strong>pointsToPath</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='drawInitialBodyContour-instance'>
+      - (void) <strong>drawInitialBodyContour</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getLines-instance'>
+      - (void) <strong>getLines</strong>(index)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='scaleSkeleton-instance'>
+      - (void) <strong>scaleSkeleton</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='drawSkeleton-instance'>
+      - (void) <strong>drawSkeleton</strong>(results)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='clone-instance'>
+      - (void) <strong>clone</strong>(activeBodyContour)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='goDrawSkeleton-instance'>
+      - (void) <strong>goDrawSkeleton</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='PathToPoints-instance'>
+      - (void) <strong>PathToPoints</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='toFront-instance'>
+      - (void) <strong>toFront</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='highlightCriticalPoints-instance'>
+      - (void) <strong>highlightCriticalPoints</strong>(zoomed)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getDirection-instance'>
+      - (void) <strong>getDirection</strong>(point1, point2)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='handle-instance'>
+      - (void) <strong>handle</strong>(i, radius, activeBodyContour, direction)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateNewCoordinates-instance'>
+      - (void) <strong>calculateNewCoordinates</strong>(idx, p1, p2)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateNewCoordinates1-instance'>
+      - (void) <strong>calculateNewCoordinates1</strong>(idx, p1, p2)
+    </p>
+    <div class='docstring'>
+  <p>function for calculating coordinates type1</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>{int}</span>
+      <span class='type'>
+        (<tt>idx</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p1</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p2</tt>)
+      </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateNewCoordinates2-instance'>
+      - (void) <strong>calculateNewCoordinates2</strong>(idx, p1, p2, p3)
+    </p>
+    <div class='docstring'>
+  <p>function for calculating coordinates type2</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>{int}</span>
+      <span class='type'>
+        (<tt>idx</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p1</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p2</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p3</tt>)
+      </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateNewCoordinates3-instance'>
+      - (void) <strong>calculateNewCoordinates3</strong>(p1, p2, p3, control_point)
+    </p>
+    <div class='docstring'>
+  <p>function for calculating coordinates type3</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p1</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p2</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>p3</tt>)
+      </span>
+    </li>
+    <li>
+      <span class='name'>{element&#47;object}</span>
+      <span class='type'>
+        (<tt>control_point</tt>)
+      </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getX-instance'>
+      - (number) <strong>getX</strong>(element)
+    </p>
+    <div class='docstring'>
+  <p>function for getting x coordinate from a Raphael element/object(x,y)</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>{object&#47;element}</span>
+      <span class='type'>
+        (<tt>element</tt>)
+      </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (<tt>number</tt>)
+      &mdash;
+      <span class='desc'>x coordinate</span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getY-instance'>
+      - (number) <strong>getY</strong>(element)
+    </p>
+    <div class='docstring'>
+  <p>function for getting y coordinate from a Raphael element/object(x,y)</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>{object&#47;element}</span>
+      <span class='type'>
+        (<tt>element</tt>)
+      </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (<tt>number</tt>)
+      &mdash;
+      <span class='desc'>y coordinate</span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getRelatedJointsIndexes-instance'>
+      - (array) <strong>getRelatedJointsIndexes</strong>(index)
+    </p>
+    <div class='docstring'>
+  <p>get related joints</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>{int}</span>
+      <span class='type'>
+        (<tt>index</tt>)
+      </span>
+      &mdash;
+      <span class='desc'>joint index</span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (<tt>array</tt>)
+      &mdash;
+      <span class='desc'>[results] related indexes</span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='moveContours-instance'>
+      - (void) <strong>moveContours</strong>(index, dragged_joint, dragged_to)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='drawLine-instance'>
+      - (void) <strong>drawLine</strong>(results, index1, index2)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='goDrawPoints-instance'>
+      - (void) <strong>goDrawPoints</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='hideSkeleton-instance'>
+      - (void) <strong>hideSkeleton</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='zoomEditLoad-instance'>
+      - (void) <strong>zoomEditLoad</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='lock-instance'>
+      - (void) <strong>lock</strong>()
+    </p>
+    <div class='docstring'>
+  <p>function for locking the main paper</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateBodyBoundingBox-instance'>
+      - (void) <strong>calculateBodyBoundingBox</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='drawZoomedContour-instance'>
+      - (void) <strong>drawZoomedContour</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='saveContour-instance'>
+      - (void) <strong>saveContour</strong>()
+    </p>
+    <div class='docstring'>
+  <hr>
+
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='zoomNext-instance'>
+      - (void) <strong>zoomNext</strong>()
+    </p>
+    <div class='docstring'>
+  <hr>
+
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showShoulders-instance'>
+      - (void) <strong>showShoulders</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showHead-instance'>
+      - (void) <strong>showHead</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showArm-instance'>
+      - (void) <strong>showArm</strong>(arm)
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showArmTipToHip-instance'>
+      - (void) <strong>showArmTipToHip</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showLegs-instance'>
+      - (void) <strong>showLegs</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fromZoom-instance'>
+      - (void) <strong>fromZoom</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='goDrawPointsNoZoom-instance'>
+      - (void) <strong>goDrawPointsNoZoom</strong>()
+    </p>
+    <div class='tags'>
+</div>
+  </div>
+</div>
+    </div>
+    <div id='footer'>
+  Generated on
+  Fri Jun 07 2013 17:28:33 GMT+0400 (MSK)
+  by
+  <a href='https://github.com/netzpirat/codo' title='CoffeeScript API documentation generator'>Codo</a>
+  v1.7.0
+  (Node.js v0.8.24).
+  &#10034;
+  Press Ctrl-h to see the keyboard shortcuts
+  &#10034;
+  <a href='http://twitter.com/#!/netzpirat'>@netzpirat</a>
+  &#10034;
+  <a href='https://mksoft.ch'>mksoft.ch</a>
+</div>
+  </body>
+</html>

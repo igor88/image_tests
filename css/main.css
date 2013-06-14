@@ -1,0 +1,43 @@
+#main
+{
+	//position:relative;
+	//left:30%;
+}
+#td_upload
+{
+	border-bottom:solid thin #78B1E0;
+}
+#main_table
+{
+	//border : solid thin black;
+}
+
+#main_table td
+{
+	padding:8px;
+	//border : solid thin black;
+}
+#holder,#holder2
+{
+	border:solid 1px #5295BC;
+}
+
+#right_menu
+{
+  vertical-align:top;
+}
+
+#right_menu input
+{
+  width:50px;
+}
+
+#top_menu
+{
+  text-align : center;
+}
+
+#top_menu input
+{
+  width:30px;
+}

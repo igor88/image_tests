@@ -1,0 +1,29 @@
+
+<div id="main">
+<table id="main_table">
+  <tr>
+    <td id="td_upload">
+      <form action="upload_image.php" method="post" enctype="multipart/form-data">
+        <input type="file" id="input_image" name="input_image" /><input type="submit" id="load" value="load" style="display:none" />
+        <input type="button" value="Draw Skeleton" disabled="disabled" id="btn_skeleton" />
+		<input type="button" value="Draw Points" disabled="disabled" id="btn_points" />
+		<input type="button" value="Draw without zooming" disabled="disabled" id="btn_points_no_zoom"/>
+		<input type="button" value="Save" disabled="disabled" id="btn_save" />
+ 		<input type="button" value="Test" disabled="disabled" id="btn_test" />
+
+      </form>
+      <div id="results"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id="holder"></div>
+    </td>
+	<td id="zoom_td" style="display:none">
+	  <div id="holder2"></div>
+	  <input type="button" value="Next" id="btn_next"/>
+    </td>
+  </tr>
+</table>
+</div>
+
